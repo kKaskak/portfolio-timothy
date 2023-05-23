@@ -3,11 +3,9 @@
 .app {
     background-color: var(--primary-color);
     font-family: var(--font-base);
+    overflow: y auto;
     scroll-snap-type: y mandatory;
   }
-.app > * {
-  scroll-snap-align: start;
-}
   
   .app__whitebg {
     background-color: var(--white-color);
@@ -36,7 +34,7 @@
     width: 100%;
     flex-direction: column;
     padding: 4rem 2rem;
-  
+    overflow: hidden;
     @media screen and (max-width: 450px) {
       padding: 4rem 1rem 2rem;
     }

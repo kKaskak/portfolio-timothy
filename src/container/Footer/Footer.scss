@@ -1,11 +1,13 @@
 .app__footer {
     display: flex;
+    scroll-snap-align: center;
 }
 .app__footer-contact {
     margin-top: 5rem;
     display: flex;
     gap: 2.5rem;
     padding: 0 2rem;
+    overflow: hidden;
     @media screen and (max-width: 900px) {
         display: flex;
         flex-direction: column;
@@ -30,6 +32,13 @@
     min-width: 290px;
     padding: 1rem;
     transition: all .3s ease-in-out;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; 
     &:hover {
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     }
@@ -167,12 +176,12 @@
       margin: 2rem 0 2rem 0;
       font-family: var(--font-base);
   
-      transition: 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+      transition: 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
       cursor: pointer;
   
       &:hover {
         background-color: #2430af;
-        transform: scale(1.1);
+        transform: scale(1.05);
       }
     }
   

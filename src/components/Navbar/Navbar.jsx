@@ -24,6 +24,7 @@ const Navbar = () => {
             <motion.a
              href={`#${item}`}
              whileHover= {{ scale: 1.1 }}
+             className='app__navbar-el'
             >
             {item}</motion.a>
           </li>

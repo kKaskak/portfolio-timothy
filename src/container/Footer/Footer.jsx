@@ -73,7 +73,7 @@ const Footer = () => {
           </h3>
         </div>
       )}
-       <p className='p-text absolute'>@2023 Timothy - All Rights Reserved</p>
+       <p className='p-text absolute'><strong>kKaskak</strong>® All rights reserved</p>
     </>
   );
 };

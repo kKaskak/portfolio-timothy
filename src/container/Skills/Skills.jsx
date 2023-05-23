@@ -32,6 +32,7 @@ const Skills = () => {
           {skills.map((skill) => (
             <motion.div
               whileInView={{ opacity: [0, 1] }}
+              viewport={{ once: true}}
               transition={{ duration: 0.5 }}
               className="app__skills-item app__flex"
               key={skill.name}

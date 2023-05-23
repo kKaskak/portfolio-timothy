@@ -48,6 +48,7 @@
         cursor: pointer;
 
         flex-direction: column;
+        overflow: hidden;
 
         div {
             width: 5px;
@@ -103,23 +104,25 @@
         justify-content: flex-end;
         align-items: flex-end;
         flex-direction: column;
-    
-        background:-moz-linear-gradient(194deg, rgba(246, 255, 248, 1) 0%, rgba(246, 255, 235, 1) 52%, rgba(255, 232, 255, 1) 100%); 
-    
+       
+        
+        /* ff 3.6+ */
+        background:-moz-linear-gradient(35deg, rgba(49, 59, 172, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%); 
+
         /* safari 5.1+,chrome 10+ */
-        background:-webkit-linear-gradient(194deg, rgba(246, 255, 248, 1) 0%, rgba(246, 255, 235, 1) 52%, rgba(255, 232, 255, 1) 100%);
-    
+        background:-webkit-linear-gradient(35deg, rgba(49, 59, 172, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+
         /* opera 11.10+ */
-        background:-o-linear-gradient(194deg, rgba(246, 255, 248, 1) 0%, rgba(246, 255, 235, 1) 52%, rgba(255, 232, 255, 1) 100%);
-    
+        background:-o-linear-gradient(35deg, rgba(49, 59, 172, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+
         /* ie 6-9 */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFE8FF', endColorstr='#F6FFF8', GradientType=1 );
-    
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#313BAC', endColorstr='#FFFFFF', GradientType=1 );
+
         /* ie 10+ */
-        background:-ms-linear-gradient(194deg, rgba(246, 255, 248, 1) 0%, rgba(246, 255, 235, 1) 52%, rgba(255, 232, 255, 1) 100%);
-    
+        background:-ms-linear-gradient(35deg, rgba(49, 59, 172, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+
         /* global 94%+ browsers support */
-        background:linear-gradient(194deg, rgba(246, 255, 248, 1) 0%, rgba(246, 255, 235, 1) 52%, rgba(255, 232, 255, 1) 100%);
+        background:linear-gradient(35deg, rgba(49, 59, 172, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
         background-size: cover;
         background-repeat: repeat;
         box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);

@@ -20,22 +20,6 @@ const Work = () => {
       setFilterWork(data);
     });
   }, []);
-  // useEffect(() => {
-  //   const card = document.getElementById('card')
-  //   const hover = document.querySelector('.app__work-hover')
-  //   if (window.innerWidth <= 1200) {
-  //     card.addEventListener('click', () => {
-  //       hover.
-  //     })
-  //   } else {
-
-  //   }
-  
-  //   return () => {
-  //     second
-  //   }
-  // }, [third])
-  
 
   const handleWorkFilter = (item) => {
     setActiveFilter(item);
@@ -56,7 +40,7 @@ const Work = () => {
     <>
       <motion.h2 className="head-text">My Creative <span>Portfolio</span> Section</motion.h2>
 
-      <motion.div whileInView={{ opacity: [0 , 1], y: [-100, 0]}}  transition={{ duration: 0.7, type: 'tween', delay: 0.5, staggerChildren: 0.5 }} className="app__work-filter">
+      <motion.div whileInView={{ opacity: [0 , 1], y: [-100, 0]}}  transition={{ duration: 0.7, type: 'tween', delay: 0.5, staggerChildren: 0.5 }} viewport={{ once: true }} className="app__work-filter">
         {['UI/UX', 'Web App', 'React JS', 'All'].map((item, index) => (
           <div
             key={index}
