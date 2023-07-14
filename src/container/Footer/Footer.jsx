@@ -4,6 +4,7 @@ import { images } from '../../constants';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { client } from '../../client';
 import './Footer.scss';
+import { BsTwitter, BsGithub } from 'react-icons/bs';
 
 const Footer = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -37,6 +38,10 @@ const Footer = () => {
   return (
     <>
       <h2 className='head-text'><span>Connect</span>Hub   📞 </h2>
+       <div className='app__footer-socials-icons'>
+          <a className='icons-socials' href='https://www.twitter.com/kKaskak' target='_blank'><BsTwitter className='bsIcon' size={45}/></a>
+          <a className='icons-socials' href='https://www.github.com/kKaskak' target='_blank'><BsGithub className='bsIcon' size={45}/></a>
+       </div>
       <div className='app__footer-contact app__flex'>
         <div className='app__footer-card'>
           <img src={images.email} alt={images.name} />

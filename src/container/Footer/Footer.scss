@@ -3,7 +3,7 @@
     scroll-snap-align: center;
 }
 .app__footer-contact {
-    margin-top: 5rem;
+    margin-top: 2rem;
     display: flex;
     gap: 2.5rem;
     padding: 0 2rem;
@@ -195,4 +195,22 @@
   width: 80vw;
   justify-content: flex-end;
   margin: 1rem;
+}
+.icons-socials {
+  padding: 1rem;
+  color: var(--secondary-color);
+}
+
+.bsIcon {
+  transition: 0.4s ease-in-out;
+  margin: 3rem 0 0 0;
+  @media screen and (max-width: 650px) {
+    margin: 1.5rem 0 0 0;
+  }
+}
+.bsIcon:hover {
+  transform: scale(1.1);
+}
+.app__footer-socials-icons {
+  overflow: hidden;
 }
