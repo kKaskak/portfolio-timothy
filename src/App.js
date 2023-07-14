@@ -7,7 +7,9 @@ const App = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   useEffect(() => {
     const checkDocumentLoaded = () => {
-      setIsLoaded(true);
+      setTimeout(() => {
+        setIsLoaded(true);
+      }, 200);
     };
     if (
       document.readyState === "complete" ||
