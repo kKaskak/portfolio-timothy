@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import './Navbar.scss'
 import { useRef } from "react";
 import { motion, useCycle } from "framer-motion";

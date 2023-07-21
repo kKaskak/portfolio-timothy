@@ -10,7 +10,7 @@ const Footer = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
-
+  const [error, setError] = useState(null)
   const { username, email, message } = formData;
 
   const handleChangeInput = (e) => {
@@ -19,6 +19,13 @@ const Footer = () => {
   };
 
   const handleSubmit = () => {
+    if(username === '' || email === '' || message === '') {
+      setError("Please fill in all the fields!");
+      setTimeout(() => {
+        setError(null)
+      }, 3000);
+      return;
+    }
     setLoading(true);
 
     const contact = {
@@ -39,8 +46,8 @@ const Footer = () => {
     <>
       <h2 className='head-text'><span>Connect</span>Hub   📞 </h2>
        <div className='app__footer-socials-icons'>
-          <a className='icons-socials' href='https://www.twitter.com/kKaskak' target='_blank'><BsTwitter className='bsIcon' size={45}/></a>
-          <a className='icons-socials' href='https://www.github.com/kKaskak' target='_blank'><BsGithub className='bsIcon' size={45}/></a>
+          <a className='icons-socials' rel='noreferrer' href='https://www.twitter.com/kKaskak' target='_blank'><BsTwitter className='bsIcon' size={45}/></a>
+          <a className='icons-socials' rel='noreferrer' href='https://www.github.com/kKaskak' target='_blank'><BsGithub className='bsIcon' size={45}/></a>
        </div>
       <div className='app__footer-contact app__flex'>
         <div className='app__footer-card'>
@@ -53,6 +60,7 @@ const Footer = () => {
         </div>
       </div>
       {!isFormSubmitted ? (
+        <>
         <div className="app__footer-form app__flex">
           <div className="app__flex">
             <input className="p-text" type="text" placeholder="Your Name" name="username" value={username} onChange={handleChangeInput} />
@@ -71,6 +79,9 @@ const Footer = () => {
           </div>
           <button type="button" className="p-text" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</button>
         </div>
+        <div style={error ? {visibility: 'visible'} : {visibility: 'hidden' }} className='error-message'>{error ? error : 'Please fill in all the fields!'}</div>
+        </>
+        
       ) : (
         <div>
           <h3 id='message' className="head-text">

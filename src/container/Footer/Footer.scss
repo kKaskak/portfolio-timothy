@@ -17,8 +17,9 @@
 }
 
 #message {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  color: var(--secondary-color);
 }
 .app__footer-card {
     align-items: center;
@@ -131,6 +132,7 @@
     width: 60%;
     flex-direction: column;
     margin: 1rem 2rem;
+    padding: 0.5rem;
   
     div {
       width: 100%;
@@ -173,7 +175,7 @@
       font-weight: 500;
       color: var(--white-color);
       outline: none;
-      margin: 2rem 0 2rem 0;
+      margin: 2rem 0 0 0;
       font-family: var(--font-base);
   
       transition: 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
@@ -213,4 +215,12 @@
 }
 .app__footer-socials-icons {
   overflow: hidden;
+}
+.error-message {
+  font-family: var(--font-base);
+  color: var(--gray-color);
+  text-align: center;
+  background: #fff;
+  background-color: #fff;
+  font-weight: 700;
 }
