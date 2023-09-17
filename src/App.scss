@@ -33,10 +33,10 @@
     flex: 1;
     width: 100%;
     flex-direction: column;
-    padding: 4rem 2rem;
+    // padding: 4rem 2rem;
     overflow: hidden;
     @media screen and (max-width: 450px) {
-      padding: 4rem 1rem 2rem;
+      padding: 1rem;
     }
   }
   
@@ -65,10 +65,7 @@
     span {
       color: var(--secondary-color);
     }
-  
-    @media screen and (min-width: 2000px) {
-      font-size: 4rem;
-    }
+
   
     @media screen and (max-width: 450px) {
       font-size: 2rem;
@@ -81,9 +78,6 @@
     color: var(--gray-color);
     line-height: 1.5;
   
-    @media screen and (min-width: 2000px) {
-      font-size: 1.75rem;
-    }
   }
   
   .bold-text {
@@ -92,9 +86,6 @@
     color: var(--black-color);
     text-align: left;
   
-    @media screen and (min-width: 2000px) {
-      font-size: 2rem;
-    }
   
     @media screen and (max-width: 450px) {
       font-size: 0.9rem;
@@ -139,17 +130,6 @@
         }
       }
   
-      @media screen and (min-width: 2000px) {
-        width: 70px;
-        height: 70px;
-  
-        margin: 0.5rem 0;
-  
-        svg {
-          width: 30px;
-          height: 30px;
-        }
-      }
     }
   }
   
@@ -174,10 +154,6 @@
         background-color: var(--secondary-color);
       }
   
-      @media screen and (min-width: 2000px) {
-        width: 20px;
-        height: 20px;
-      }
     }
 }
   

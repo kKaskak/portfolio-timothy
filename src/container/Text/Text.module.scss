@@ -1,0 +1,32 @@
+.div {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: rgb(211, 211, 211);
+}
+
+.body {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.body p {
+    font-size: 4rem;
+    margin: 0px;
+    margin-right: 1.5vw;
+    font-weight: 700;
+    color: var(--secondary-color);
+    @media screen and (max-width: 900px) {
+        font-size: 3rem;
+    }
+    @media screen and (max-width: 700px) {
+        font-size: 2.3rem;
+    }
+}
+
+.body span {
+    opacity: 0.2;
+}

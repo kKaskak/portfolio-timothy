@@ -24,11 +24,7 @@
     height: 100%;
     flex-direction: row;
     scroll-snap-align: center;
-
     padding: 6rem 2rem 0;
-    @media screen and (min-width: 2000px) {
-        padding-top: 8rem ;
-    }
     @media screen and (max-width: 1150px) {
         flex-direction: column;
         justify-content: center;
@@ -45,10 +41,6 @@
     justify-content: flex-start;
     align-items: flex-start;
     height: 100%;
-    @media screen  and (min-width: 2000px) {
-        width: 100%;
-        margin-right: 0rem;
-    }
     @media screen  and (min-width: 1200px) {
         flex: 0.9;
     }
@@ -122,9 +114,6 @@
            -moz-user-select: none; /* Old versions of Firefox */
             -ms-user-select: none; /* Internet Explorer/Edge */
                 user-select: none; 
-            @media screen and (min-width: 2000px) {
-                font-size: 5rem;
-            }
         }
     @media screen and (max-width: 1200px){
         justify-content: flex-start;
@@ -188,23 +177,6 @@
   div:nth-child(3) {
     width: 70px;
     height: 70px;
-  }
-
-  @media screen and (min-width: 2000px) {
-    div:nth-child(2) {
-      width: 400px;
-      height: 400px;
-    }
-
-    div:nth-child(3) {
-      width: 170px;
-      height: 170px;
-    }
-
-    div:nth-child(1) {
-      width: 200px;
-      height: 200px;
-    }
   }
 
   @media screen and (max-width: 1200px) {
