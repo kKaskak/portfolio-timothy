@@ -10,7 +10,7 @@ const About = () => {
 	// -> Connecting to sanity
 	const [abouts, setAbouts] = useState([]);
 	useEffect(() => {
-		const query = '*[_type == 'abouts']';
+		const query = '*[_type == "abouts"]';
 		client.fetch(query).then((data) => setAbouts(data));
 		setIsLoading(false);
 	}, []);
