@@ -41,6 +41,8 @@
 	justify-content: flex-start;
 	align-items: flex-start;
 	height: 100%;
+	overflow: visible;
+
 	@media screen and (min-width: 1200px) {
 		flex: 0.9;
 	}
@@ -61,6 +63,8 @@
 	justify-content: flex-end;
 	align-items: flex-end;
 	flex-direction: column;
+	overflow: visible;
+
 	.badge-cmp {
 		p {
 			-webkit-touch-callout: none; /* iOS Safari */
@@ -88,12 +92,13 @@
 		border-radius: 15px;
 		flex-direction: row;
 		width: auto;
-
+		overflow: hidden;
 		box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 	}
 	.tag-cmp {
 		flex-direction: column;
 		margin-top: 3rem;
+		overflow: hidden;
 		p {
 			width: 100%;
 			text-transform: uppercase;
@@ -104,6 +109,7 @@
 			-moz-user-select: none; /* Old versions of Firefox */
 			-ms-user-select: none; /* Internet Explorer/Edge */
 			user-select: none;
+			overflow: hidden;
 		}
 	}
 	span {

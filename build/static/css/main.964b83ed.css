@@ -498,6 +498,7 @@
 	flex-direction: column;
 	justify-content: flex-end;
 	width: 100%;
+	overflow: hidden;
 }
 .app__header-badge .badge-cmp h1,
 .app__header-badge .badge-cmp p {

@@ -45,7 +45,7 @@ const Header = () => {
 						}}
 						className='tag-cmp app__flex'
 					>
-						<p className='p-text'>Front-end</p>
+						<p className='p-text'>Fullstack</p>
 						<p className='p-text'>Developer</p>
 					</motion.div>
 				</div>

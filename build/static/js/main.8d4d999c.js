@@ -22479,7 +22479,7 @@
 												children: [
 													(0, Ta.jsx)('p', {
 														className: 'p-text',
-														children: 'Front-end',
+														children: 'Fullstack',
 													}),
 													(0, Ta.jsx)('p', {
 														className: 'p-text',
