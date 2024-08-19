@@ -2,7 +2,7 @@ import React from 'react';
 
 const NavigationDots = ({ active }) => {
 	return (
-		<div className="app__navigation">
+		<div className='app__navigation'>
 			{[
 				'home',
 				'text',
@@ -15,7 +15,7 @@ const NavigationDots = ({ active }) => {
 				// eslint-disable-next-line jsx-a11y/anchor-has-content
 				<a
 					key={item + index}
-					className="app__navigation-dot"
+					className='app__navigation-dot'
 					style={
 						active === item ? { backgroundColor: '#313BAC' } : {}
 					}

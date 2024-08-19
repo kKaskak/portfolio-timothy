@@ -49,76 +49,76 @@ const Footer = () => {
 	};
 	return (
 		<>
-			<h2 className="head-text">
+			<h2 className='head-text'>
 				<span>Connect</span>Hub 📞{' '}
 			</h2>
-			<div className="app__footer-socials-icons">
+			<div className='app__footer-socials-icons'>
 				<a
-					className="icons-socials"
-					rel="noreferrer"
-					href="https://www.twitter.com/kKaskak"
-					target="_blank"
+					className='icons-socials'
+					rel='noreferrer'
+					href='https://www.twitter.com/kKaskak'
+					target='_blank'
 				>
-					<BsTwitter className="bsIcon" size={45} />
+					<BsTwitter className='bsIcon' size={45} />
 				</a>
 				<a
-					className="icons-socials"
-					rel="noreferrer"
-					href="https://www.github.com/kKaskak"
-					target="_blank"
+					className='icons-socials'
+					rel='noreferrer'
+					href='https://www.github.com/kKaskak'
+					target='_blank'
 				>
-					<BsGithub className="bsIcon" size={45} />
+					<BsGithub className='bsIcon' size={45} />
 				</a>
 			</div>
-			<div className="app__footer-contact app__flex">
-				<div className="app__footer-card">
+			<div className='app__footer-contact app__flex'>
+				<div className='app__footer-card'>
 					<img src={images.email} alt={images.name} />
-					<a href="mailto:hamiahumorek@gmail.com" className="p-text">
+					<a href='mailto:hamiahumorek@gmail.com' className='p-text'>
 						hamiahumorek@gmail.com
 					</a>
 				</div>
-				<div className="app__footer-card">
-					<img src={images.mobile} alt="phone" />
-					<a href="tel: +359878245823" className="p-text">
+				<div className='app__footer-card'>
+					<img src={images.mobile} alt='phone' />
+					<a href='tel: +359878245823' className='p-text'>
 						+359 878 245 823
 					</a>
 				</div>
 			</div>
 			{!isFormSubmitted ? (
 				<>
-					<div className="app__footer-form app__flex">
-						<div className="app__flex">
+					<div className='app__footer-form app__flex'>
+						<div className='app__flex'>
 							<input
-								className="p-text"
-								type="text"
-								placeholder="Your Name"
-								name="username"
+								className='p-text'
+								type='text'
+								placeholder='Your Name'
+								name='username'
 								value={username}
 								onChange={handleChangeInput}
 							/>
 						</div>
-						<div className="app__flex">
+						<div className='app__flex'>
 							<input
-								className="p-text"
-								type="email"
-								placeholder="Your Email"
-								name="email"
+								className='p-text'
+								type='email'
+								placeholder='Your Email'
+								name='email'
 								value={email}
 								onChange={handleChangeInput}
 							/>
 						</div>
 						<div>
 							<textarea
-								className="p-text"
-								placeholder="Your Message"
+								className='p-text'
+								placeholder='Your Message'
 								value={message}
-								name="message"
+								name='message'
 								onChange={handleChangeInput}
 							/>
 						</div>
 						<button
-							type="button"
-							className="p-text"
+							type='button'
+							className='p-text'
 							onClick={handleSubmit}
 						>
 							{!loading ? 'Send Message' : 'Sending...'}
@@ -130,19 +130,19 @@ const Footer = () => {
 								? { visibility: 'visible' }
 								: { visibility: 'hidden' }
 						}
-						className="error-message"
+						className='error-message'
 					>
 						{error ? error : 'Please fill in all the fields!'}
 					</div>
 				</>
 			) : (
 				<div>
-					<h3 id="message" className="head-text">
+					<h3 id='message' className='head-text'>
 						Thank you for getting in touch!
 					</h3>
 				</div>
 			)}
-			<p className="p-text absolute">
+			<p className='p-text absolute'>
 				<strong>kKaskak</strong>® All rights reserved
 			</p>
 		</>

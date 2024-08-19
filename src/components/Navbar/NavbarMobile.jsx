@@ -77,20 +77,20 @@ const NavbarMobile = () => {
 			animate={isOpen ? 'open' : 'closed'}
 			custom={height}
 			ref={containerRef}
-			className="navbar-mobile"
+			className='navbar-mobile'
 		>
-			<motion.div className="background" variants={sidebar} />
-			<motion.ul className="ul-variants" variants={variants}>
+			<motion.div className='background' variants={sidebar} />
+			<motion.ul className='ul-variants' variants={variants}>
 				{['home', 'about', 'work', 'skills', 'contact'].map((item) => (
 					<motion.li
-						className="li-variants"
+						className='li-variants'
 						variants={variants}
 						whileHover={{ scale: 1.1 }}
 						key={item}
 						whileTap={{ scale: 0.95 }}
 						transition={{ duration: 0.2 }}
 					>
-						<a className="items" href={`#${item}`}>
+						<a className='items' href={`#${item}`}>
 							{item}
 						</a>
 					</motion.li>

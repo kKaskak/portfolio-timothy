@@ -10,7 +10,7 @@ const About = () => {
 	// -> Connecting to sanity
 	const [abouts, setAbouts] = useState([]);
 	useEffect(() => {
-		const query = '*[_type == "abouts"]';
+		const query = '*[_type == 'abouts']';
 		client.fetch(query).then((data) => setAbouts(data));
 		setIsLoading(false);
 	}, []);
@@ -24,14 +24,14 @@ const About = () => {
 						initial={'hidden'}
 						whileInView={'show'}
 						viewport={{ once: true, amount: 0.2 }}
-						id="about"
-						className="head-text app__about-header"
+						id='about'
+						className='head-text app__about-header'
 					>
 						From <span>Idea </span>to Reality: <br />
 						My Dynamic <span>Development</span> Approach
 					</motion.h2>
 
-					<motion.div className="app__profiles">
+					<motion.div className='app__profiles'>
 						{abouts.sort().map((about, index) => (
 							<motion.div
 								variants={appProfiles}
@@ -39,7 +39,7 @@ const About = () => {
 								whileInView={'show'}
 								whileHover={hover}
 								viewport={{ once: true, amount: 0.2 }}
-								className="app__profile-item"
+								className='app__profile-item'
 								key={about.title + index}
 							>
 								<motion.img
@@ -47,12 +47,12 @@ const About = () => {
 									alt={about.imageAlt}
 								/>
 								<h2
-									className="bold-text"
+									className='bold-text'
 									style={{ marginTop: 20 }}
 								>
 									{about.title}
 								</h2>
-								<p className="p-text" style={{ marginTop: 10 }}>
+								<p className='p-text' style={{ marginTop: 10 }}>
 									{about.description}
 								</p>
 							</motion.div>
