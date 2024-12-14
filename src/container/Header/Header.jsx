@@ -73,7 +73,7 @@ const Header = () => {
 				initial='hidden'
 				animate='show'
 			>
-				{[images.html, images.javascript, images.sass].map(
+				{[images.typescript, images.node, images.react].map(
 					(circle, index) => (
 						<motion.div
 							variants={item}
